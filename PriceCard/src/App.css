@@ -1,0 +1,70 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+body ,html{
+  background-color: rgb(128, 177, 233);
+  color: white;
+}
+img{
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  
+}
+
+#box{
+  
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#pricelabel{
+  margin-top: 6rem;
+  
+  width: 70rem;
+  height:40rem;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  
+  
+  
+}
+#price{
+  background-color: white;
+  border: 1px solid white;
+  width: 30rem;
+  color: black;
+  height: 30rem;
+  border-radius: 2rem;
+  text-align: center;
+  padding-top: 3rem;
+    
+
+}
+#price:hover{
+  box-shadow: 2px 2px 2px yellow
+}
+#btn{
+  font-size: 20px;
+  margin-top: 40px;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 20px;
+  background-color: rgba(6, 35, 255, 0.789);
+  color: white;
+  cursor: pointer;
+  
+}
+#btn:hover{
+  color: black;
+  background-color: chartreuse;
+}
+#content{
+  margin-top: 20px;
+}
