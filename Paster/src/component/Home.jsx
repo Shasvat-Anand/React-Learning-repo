@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams, useSearchParams } from "react-router-dom";
 
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToPaste, updateToPaste } from "../redux/PasteSlice";
 
 const Home = () => {
@@ -30,8 +30,15 @@ const Home = () => {
 
     setTitle("");
     setValue("");
-    setSearchParam("");
+    setSearchParam({});
   }
+  
+  const pastes = useSelector((state) => state.paste.pastes);
+  useEffect(() => {
+  localStorage.setItem("pastes", JSON.stringify(pastes));
+  console.log(pastes)
+},[pastes] );
+  
 
   return (
     <div>
