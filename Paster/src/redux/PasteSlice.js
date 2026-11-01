@@ -32,6 +32,7 @@ export const PasteSlice = createSlice({
         state.pastes[index] = paste;
 
         localStorage.setItem("pastes", JSON.stringify(state.pastes));
+        toast.success("Paste is updated")
       }
       else{
         toast.error("Not found");
@@ -48,7 +49,7 @@ export const PasteSlice = createSlice({
      removeFromPaste : (state, action)=>{
       const pasteId = action.payload;
 
-      const index = state.pastes((item)=> item._id === pasteId)
+      const index = state.pastes.findIndex((item)=> item._id === pasteId)
 
       if(index >= 0){
         state.pastes.splice(index, 1);
