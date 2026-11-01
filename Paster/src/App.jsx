@@ -6,6 +6,7 @@ import NavBar from './component/NavBar'
 import Home from './component/Home'
 import AllPaste from './component/AllPaste'
 import ViewPaste from './component/ViewPaste'
+import Footer from './component/Footer'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         element : <div>
           <NavBar/>
           <Home/>
+          <Footer/>
         </div>
       },
       {
@@ -23,6 +25,7 @@ function App() {
         element : <div>
           <NavBar/>
           <AllPaste/>
+          <Footer/>
         </div>
       },
       {
@@ -30,6 +33,8 @@ function App() {
         element : <div>
           <NavBar/>
           <ViewPaste/>
+          <Footer/>
+
         </div>
       },
 
